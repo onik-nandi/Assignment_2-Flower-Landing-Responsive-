@@ -45,6 +45,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background: rgb(245, 248, 255);
+}
 #text_dark_gray {
   color: #252432;
 }
@@ -197,9 +200,76 @@
 }
 
 /* plant lover area ends*/
+/* deal section starts */
+.deal-section {
+  text-align: center;
+  margin-top: 100px;
+}
+.deal-container .deal-header h1 {
+  font-size: 3.125rem;
+}
+.deal-container .deal-header p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.3rem;
+  padding: 10px 220px;
+}
+.deal-container .deal-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 28px;
+   margin-top: 80px;
+  margin-bottom: 100px;
+}
+.deal-container .deal-images .deal-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.deal-container .deal-images .deal-img .overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.411);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+}
 
-/* Main area ends*/
-
+.deal-container .deal-images .deal-img .overlay h2 {
+  font-size: 1.2rem;
+}
+.deal-container .deal-images .deal-img .overlay a {
+  color: #ffffff;
+  line-height: 36px;
+  text-underline-offset: 6px;
+  font-size: 1rem;
+}
+.deal-container .deal-images .deal-img img {
+  border-radius: 14px;
+  height: 100%;
+  /* width: 100%; */
+}
+#img-span {
+  grid-row: span 2;
+}
+#big-over-h2 {
+  font-size: 2.5rem;
+}
+#big-over-a {
+  font-size: 1.75rem;
+}
+/* join section */
+.join-section{
+  background: url(../Images/news-letter-bg.png);
+  width: 100%;
+  height: 200px;
+}
 /* Mobile Responsive Area */
 @media screen and (max-width: 576px) {
   /* nav responsive */
@@ -243,7 +313,7 @@
     width: 100%;
   }
   .plant-container .plant-card-container .plant-card button {
-    padding: 19px 40px;
+    padding: 19px 35px;
   }
   /* our Plan area */
   .plant_lover_container {
@@ -266,6 +336,34 @@
   .plant_lover_container .plant_lover_des li {
     font-size: 0.75rem;
     margin: 15px;
+  }
+  /* deal section */
+  .deal-header{
+    text-align: center;
+  }
+  .deal-container .deal-header p {
+    padding: 30px;
+  }
+  .deal-container .deal-images {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 28px;
+    margin: 0 15px;
+  }
+  .deal-container .deal-images .deal-img img {
+    height: 100%;
+    width: 100%;
+  }
+  .top-img {
+    grid-row: 1;
+  }
+  .mid-img {
+    grid-row: 2;
+  }
+  .bottom-img {
+    grid-row: 3;
+  }
+  .deal-section{
+    margin-top: 65px;
   }
 }
 /* Mobile Responsive Area */
