@@ -1,0 +1,125 @@
+/* font imports area */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+/* font imports area */
+/* font css */
+/* .inter-uniquifier {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+ {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+.p-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.header-font {
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+}
+.flex {
+  display: flex;
+}
+/* common css */
+* {
+  margin: 0;
+  padding: 0;
+}
+#text_dark_gray {
+  color: #252432;
+}
+.highlight_text {
+  color: #e95a08;
+}
+/* common css */
+
+/* header area */
+/* nav starts */
+.header-container {
+  max-width: 1140px;
+  margin: 30px auto;
+}
+.nav-section {
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-section .nav-menu {
+  align-items: center;
+}
+.nav-section .nav-menu ul {
+  align-items: center;
+  gap: 48px;
+}
+.nav-section .nav-menu ul li {
+  list-style: none;
+}
+.nav-section .nav-menu ul li:hover a {
+  color: #252432;
+}
+.nav-section .nav-menu ul li a {
+  text-decoration: none;
+  color: #8987a1;
+  font-size: 1rem;
+}
+.nav-section .nav-menu ul li a i {
+  padding-right: 10px;
+}
+#cart_icon {
+  color: #252432;
+}
+.nav-section .nav-menu .cartul {
+  margin-left: 48px;
+}
+/* nav area ends */
+/* Banner area starts */
+.banner_container {
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 120px 0;
+}
+.banner_container .banner_content h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+.banner_container .banner_content p {
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.banner_container .banner_img {
+  width: 100%;
+}
+
+/* Mobile Responsive Area */
+@media screen and (max-width: 576px) {
+  /* nav responsive */
+  .responsive_dis_none {
+    display: none !important;
+  }
+  .nav-section {
+    margin: 13px 16px;
+    justify-content: space-between;
+  }
+  /* banner responsive */
+  .banner_container {
+    flex-direction: column-reverse;
+    margin-top: 28px;
+  }
+  .banner_container .banner_img img {
+    width: 100%;
+  }
+    .banner_container .banner_content{
+      padding: 28px 16px;
+    }
+  .banner_container .banner_content h1 {
+    font-size: 1.5rem;
+  }
+}
+/* Mobile Responsive Area */
