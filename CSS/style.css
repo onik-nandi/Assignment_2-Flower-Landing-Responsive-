@@ -271,6 +271,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-bottom: 100px;
 }
 .join-container {
   max-width: 1140px;
@@ -303,6 +304,52 @@ body {
 }
 .join-container .join-content form .btn-sub:hover {
   cursor: pointer;
+}
+
+/* footer area */
+.footer-seection {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-container .footer-logo {
+  margin-top: -98px;
+}
+.footer-container .footer-logo p {
+  /* max-width: 359px; */
+  font-size: 1.375rem;
+  color: rgba(0, 0, 0, 0.5);
+  /* padding-right: 110px; */
+  padding-top: 10px;
+}
+.footer-container .footer-icons ul {
+  display: flex;
+}
+.footer-container ul li {
+  list-style: none;
+  padding-bottom: 32px;
+}
+.footer-container ul li a {
+  text-decoration: none;
+  color: rgba(107, 114, 128, 1);
+  font-size: 1rem;
+}
+.footer-container ul li a:hover {
+  color: #252432;
+}
+.footer-container .footer-icons {
+  margin-top: -190px;
+}
+.footer-container .footer-icons ul li {
+  list-style: none;
+  padding-right: 24px;
+}
+.footer-container .footer-icons .twitter-logo {
+  padding-top: 10px;
 }
 /* Mobile Responsive Area */
 @media screen and (max-width: 576px) {
@@ -348,6 +395,7 @@ body {
   }
   .plant-container .plant-card-container .plant-card button {
     padding: 19px 30px;
+    font-size: 1rem;
   }
   /* our Plan area */
   .plant_lover_container {
@@ -431,6 +479,23 @@ body {
   .join-container .join-content form .btn-sub {
     padding: 15px 12px;
     margin-left: -5px;
+  }
+  /* footer area */
+  .footer-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-top: 50px;
+  }
+  .footer-container p {
+    padding-bottom: 10px;
+  }
+  .footer-container .footer-logo p {
+    max-width: auto;
+  }
+  .footer-container .footer-icons {
+    margin-top: 0px;
   }
 }
 /* Mobile Responsive Area */
