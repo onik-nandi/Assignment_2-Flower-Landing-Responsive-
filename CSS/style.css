@@ -39,6 +39,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 #text_dark_gray {
   color: #252432;
@@ -156,6 +157,7 @@
 }
 .plant-card-container .plant-card button {
   margin-top: 20px;
+  font-size: 1rem;
 }
 .plant-container .plant-card-container .plant-card button:hover {
   cursor: pointer;
@@ -177,6 +179,7 @@
   .banner_container {
     flex-direction: column-reverse;
     margin-top: 28px;
+    margin-bottom: 65px;
   }
   .banner_container .banner_img img {
     width: 100%;
@@ -186,6 +189,20 @@
   }
   .banner_container .banner_content h1 {
     font-size: 1.5rem;
+    padding-bottom: 13px;
+  }
+  /* our plant area */
+  .plant-container .plant-heading {
+    text-align: center;
+    padding: 0 52px;
+    margin-bottom: 28px;
+  }
+  .plant-container .plant-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
+  }
+  .plant-container .plant-card-container .plant-card {
+    width: 100%;
   }
 }
 /* Mobile Responsive Area */
