@@ -199,10 +199,13 @@
   }
   .plant-container .plant-card-container {
     grid-template-columns: repeat(2, 1fr);
-    margin: 20px;
+    margin: 0 20px;
   }
   .plant-container .plant-card-container .plant-card {
     width: 100%;
+  }
+  .plant-container .plant-card-container .plant-card button {
+    padding: 19px 30px;
   }
 }
 /* Mobile Responsive Area */
