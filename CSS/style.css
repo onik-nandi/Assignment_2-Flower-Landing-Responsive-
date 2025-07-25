@@ -16,6 +16,10 @@
   font-variation-settings:
     "wdth" 100;
 } */
+
+.hide {
+  display: none;
+}
 .p-text {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -163,6 +167,37 @@
   cursor: pointer;
   background: #be5a20;
 }
+
+/* plant lover area */
+.plant_lover_container {
+  justify-content: space-between;
+  gap: 80px;
+}
+.plant_lover_container .plant-lover-img {
+  position: relative;
+}
+.plant_lover_container .plant-lover-img .badge-img {
+  max-width: 280px;
+  position: absolute;
+  top: -22%;
+  left: 65%;
+  filter: drop-shadow(0px 8px 2px rgba(0, 0, 0, 0.25));
+}
+
+.plant_lover_container .plant_lover_des {
+  margin-top: 75px;
+}
+.plant_lover_container .plant_lover_des h2 {
+  font-size: 3.125rem;
+}
+.plant_lover_container .plant_lover_des li {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.375rem;
+  margin-top: 20px;
+}
+
+/* plant lover area ends*/
+
 /* Main area ends*/
 
 /* Mobile Responsive Area */
@@ -192,9 +227,12 @@
     padding-bottom: 13px;
   }
   /* our plant area */
+  .plant-container {
+    margin-bottom: 42px;
+  }
   .plant-container .plant-heading {
     text-align: center;
-    padding: 0 52px;
+    padding: 0 28px;
     margin-bottom: 28px;
   }
   .plant-container .plant-card-container {
@@ -205,7 +243,29 @@
     width: 100%;
   }
   .plant-container .plant-card-container .plant-card button {
-    padding: 19px 30px;
+    padding: 19px 40px;
+  }
+  /* our Plan area */
+  .plant_lover_container {
+    flex-direction: column;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+  .plant_lover_container .plant-lover-img img {
+    width: calc(100% - 15px);
+  }
+  .plant_lover_container .plant-lover-img .badge-img {
+    display: none;
+  }
+  .plant_lover_container .plant_lover_des {
+    margin-top: -45px;
+  }
+  .plant_lover_container .plant_lover_des h2 {
+    font-size: 1.5rem;
+  }
+  .plant_lover_container .plant_lover_des li {
+    font-size: 0.75rem;
+    margin: 15px;
   }
 }
 /* Mobile Responsive Area */
