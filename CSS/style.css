@@ -395,7 +395,7 @@ body {
   }
   .plant-container .plant-card-container .plant-card button {
     padding: 19px 30px;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   /* our Plan area */
   .plant_lover_container {
@@ -418,6 +418,7 @@ body {
   .plant_lover_container .plant_lover_des li {
     font-size: 0.75rem;
     margin: 15px;
+    font-size: 0.75rem;
   }
 
   /* deal section */
@@ -450,6 +451,9 @@ body {
   }
   #big-over-h2 {
     font-size: 1.25rem;
+  }
+  #big-over-a {
+    font-size: 1rem;
   }
   /* join area */
   .join-container {
